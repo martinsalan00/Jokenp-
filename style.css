@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://picsum.photos/seed/nature2/1600/900") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    margin: 30px 0;
+    display: flex;
+    gap: 40px;
+}
+
+button {
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.7f;
+}
+
+#rock {
+    background-color: #222121;
+    color: white;
+    margin: 10px;
+}
+
+#paper {
+    background-color: #15409c;
+    color: white;
+    margin: 10px;
+}
+
+#scissor {
+    background-color: #a19796;
+    color: white;
+    margin: 10px;
+}
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+
+}
+
+.your-score span {
+    color: #03364e;
+}
+
+.machine-score span {
+    color: #91150a;
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 40px;
+        padding: 8px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    button {
+        font-size: 35px;
+        padding: 8px 12px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+    button {
+        font-size: 24px;
+        padding: 6px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 280px) {
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
